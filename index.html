@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>いつものファミリーキャンプ2026 | 夕陽ヶ丘家族キャンプ</title>
+<meta name="description" content="2026.8.8-9 とままえ夕陽ヶ丘未来港公園にて開催。いつもの仲間との家族キャンプ計画書。">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-deep:#0c1220;
+    --navy:#182645;
+    --navy-light:#2a3c66;
+    --sand:#f5ecd6;
+    --sand-dim:rgba(245,236,214,.68);
+    --sand-faint:rgba(245,236,214,.36);
+    --orange:#ff6a35;
+    --gold:#ffb648;
+    --ember:#e14a2a;
+    --teal:#2f8f8a;
+    --line:rgba(245,236,214,.14);
+    --font-display:'Anton', sans-serif;
+    --font-jp:'Zen Kaku Gothic New', sans-serif;
+    --font-mono:'Space Mono', monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--navy-deep);
+    color:var(--sand);
+    font-family:var(--font-jp);
+    line-height:1.7;
+    overflow-x:hidden;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(12,18,32,.86);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1040px;margin:0 auto;padding:14px 24px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .nav-logo{
+    font-family:var(--font-display);
+    letter-spacing:.05em;
+    font-size:15px;
+    color:var(--sand);
+    white-space:nowrap;
+  }
+  .nav-logo span{color:var(--orange);}
+  .nav-links{
+    display:flex;gap:18px;
+    overflow-x:auto;
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:.08em;
+    scrollbar-width:none;
+  }
+  .nav-links::-webkit-scrollbar{display:none;}
+  .nav-links a{
+    white-space:nowrap;color:var(--sand-dim);text-decoration:none;
+    padding:4px 2px;border-bottom:2px solid transparent;transition:.2s;
+  }
+  .nav-links a:hover{color:var(--gold);border-color:var(--orange);}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    min-height:100svh;
+    display:flex;flex-direction:column;justify-content:center;align-items:center;
+    text-align:center;
+    padding:120px 24px 80px;
+    overflow:hidden;
+    background:linear-gradient(180deg,
+      var(--navy-deep) 0%, var(--navy) 24%, var(--navy-light) 42%,
+      var(--ember) 62%, var(--orange) 76%, var(--gold) 92%, #ffe3a8 100%);
+  }
+  .sun{
+    position:absolute;
+    left:50%;top:38%;
+    width:220px;height:220px;
+    background:radial-gradient(circle at 50% 50%, #fff6df 0%, var(--gold) 45%, var(--orange) 100%);
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    box-shadow:0 0 90px 30px rgba(255,182,72,.35);
+    animation:glow 6s ease-in-out infinite;
+  }
+  @keyframes glow{
+    0%,100%{box-shadow:0 0 90px 30px rgba(255,182,72,.35);}
+    50%{box-shadow:0 0 130px 46px rgba(255,182,72,.5);}
+  }
+  .horizon-waves{
+    position:absolute;left:0;right:0;bottom:0;width:100%;
+    line-height:0;
+  }
+  .hero-content{position:relative;z-index:2;}
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:12px;letter-spacing:.22em;
+    color:var(--sand);
+    opacity:.85;
+    margin-bottom:18px;
+  }
+  .hero h1{
+    font-family:var(--font-jp);
+    font-weight:900;
+    font-size:clamp(38px,9vw,88px);
+    line-height:1.08;
+    letter-spacing:.02em;
+    color:var(--navy-deep);
+    text-shadow:0 2px 0 rgba(245,236,214,.25);
+  }
+  .hero h1 .year{
+    display:block;
+    font-family:var(--font-display);
+    font-weight:400;
+    font-size:clamp(46px,11vw,110px);
+    letter-spacing:.02em;
+    margin-top:6px;
+    color:var(--sand);
+    -webkit-text-stroke:2px var(--navy-deep);
+    text-shadow:none;
+  }
+  .hero-sub{
+    margin-top:20px;
+    font-size:clamp(14px,2.4vw,18px);
+    color:var(--navy-deep);
+    font-weight:700;
+    letter-spacing:.02em;
+  }
+  .ticket-stub{
+    margin:40px auto 0;
+    max-width:560px;
+    background:rgba(12,18,32,.82);
+    border:1px solid rgba(245,236,214,.3);
+    border-radius:10px;
+    padding:20px 26px;
+    display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;
+    text-align:left;
+  }
+  .ticket-stub .item small{
+    display:block;font-family:var(--font-mono);font-size:10px;
+    letter-spacing:.14em;color:var(--gold);margin-bottom:4px;
+  }
+  .ticket-stub .item strong{
+    display:block;font-size:14px;color:var(--sand);font-weight:700;
+  }
+  .scroll-cue{
+    display:inline-block;margin-top:46px;
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.2em;
+    color:var(--navy-deep);text-decoration:none;font-weight:700;
+    animation:bob 2s ease-in-out infinite;
+  }
+  @keyframes bob{0%,100%{transform:translateY(0);}50%{transform:translateY(8px);}}
+
+  /* ---------- SECTIONS ---------- */
+  section.section{padding:88px 0 20px;position:relative;}
+  .section .eyebrow{color:var(--gold);}
+  .section h2{
+    font-family:var(--font-display);
+    font-size:clamp(30px,5.4vw,52px);
+    letter-spacing:.01em;
+    margin-bottom:10px;
+  }
+  .section-desc{
+    color:var(--sand-dim);
+    max-width:560px;
+    margin-bottom:44px;
+    font-size:14.5px;
+  }
+  .divider{
+    display:flex;align-items:center;gap:14px;
+    padding:56px 0 0;
+    color:var(--sand-faint);
+  }
+  .divider::before,.divider::after{
+    content:"";flex:1;height:1px;
+    background:linear-gradient(90deg,transparent,var(--line),transparent);
+  }
+  .divider .dot{
+    width:8px;height:8px;border-radius:50%;
+    background:radial-gradient(circle,var(--gold),var(--orange));
+  }
+
+  /* ---------- LINEUP ---------- */
+  .lineup-groups{display:flex;flex-direction:column;gap:36px;}
+  .fam-group .fam-name{
+    font-family:var(--font-mono);
+    font-size:11px;letter-spacing:.16em;color:var(--teal);
+    margin-bottom:10px;
+  }
+  .fam-tags{display:flex;flex-wrap:wrap;gap:10px 14px;}
+  .fam-tags .tag{
+    font-family:var(--font-display);
+    font-size:clamp(20px,3.4vw,30px);
+    letter-spacing:.01em;
+    color:var(--sand);
+    padding:4px 2px;
+    border-bottom:3px solid var(--line);
+    transition:.2s;
+  }
+  .fam-group:nth-child(1) .tag{border-color:var(--orange);}
+  .fam-group:nth-child(2) .tag{border-color:var(--teal);}
+  .fam-group:nth-child(3) .tag{border-color:var(--gold);}
+  .lineup-count{
+    margin-top:30px;font-family:var(--font-mono);font-size:12px;color:var(--sand-dim);
+  }
+
+  /* ---------- TIMETABLE ---------- */
+  .tt-days{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+  @media(max-width:760px){.tt-days{grid-template-columns:1fr;}}
+  .tt-day-head{
+    display:flex;align-items:baseline;justify-content:space-between;
+    border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:18px;
+  }
+  .tt-day-head .d{font-family:var(--font-display);font-size:22px;color:var(--gold);}
+  .tt-day-head .w{font-family:var(--font-mono);font-size:11px;color:var(--sand-dim);}
+  .tt-row{
+    display:grid;grid-template-columns:60px 1fr;gap:14px;
+    padding:14px 0;border-bottom:1px dashed var(--line);
+  }
+  .tt-row:last-child{border-bottom:none;}
+  .tt-time{
+    font-family:var(--font-mono);font-weight:700;font-size:14px;color:var(--sand);
+    padding-top:2px;
+  }
+  .tt-body .cat{
+    display:inline-block;font-family:var(--font-mono);font-size:9.5px;
+    letter-spacing:.1em;padding:2px 8px;border-radius:3px;margin-bottom:6px;
+    color:var(--navy-deep);font-weight:700;
+  }
+  .cat-move{background:var(--teal);}
+  .cat-meal{background:var(--orange);}
+  .cat-camp{background:var(--sand);}
+  .cat-shop{background:var(--gold);}
+  .cat-party{background:var(--ember);color:var(--sand);}
+  .tt-title{font-weight:700;font-size:15px;margin-bottom:2px;}
+  .tt-note{font-size:13px;color:var(--sand-dim);}
+
+  /* ---------- ACCESS ---------- */
+  .access-card{
+    background:var(--navy);border:1px solid var(--line);border-radius:14px;
+    padding:30px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;
+  }
+  .access-name{font-size:20px;font-weight:900;margin-bottom:6px;}
+  .access-addr{color:var(--sand-dim);font-size:13.5px;}
+  .map-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--orange);color:var(--navy-deep);
+    font-weight:700;font-size:14px;
+    padding:12px 22px;border-radius:30px;text-decoration:none;
+    transition:.2s;white-space:nowrap;
+  }
+  .map-btn:hover{background:var(--gold);}
+  .depart-grid{
+    margin-top:24px;display:grid;grid-template-columns:repeat(2,1fr);gap:14px;
+  }
+  @media(max-width:520px){.depart-grid{grid-template-columns:1fr;}}
+  .depart-card{
+    background:var(--navy);border:1px solid var(--line);border-radius:10px;padding:16px 18px;
+  }
+  .depart-card small{font-family:var(--font-mono);font-size:10px;color:var(--teal);letter-spacing:.1em;}
+  .depart-card div{font-size:16px;font-weight:700;margin-top:4px;}
+
+  /* ---------- SHUTTLE ---------- */
+  .shuttle-cols{display:grid;grid-template-columns:1fr 1fr;gap:30px;}
+  @media(max-width:700px){.shuttle-cols{grid-template-columns:1fr;}}
+  .shuttle-col-title{
+    font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;color:var(--gold);
+    margin-bottom:16px;
+  }
+  .car-card{
+    background:var(--navy);border:1px solid var(--line);border-radius:10px;
+    padding:16px 18px;margin-bottom:12px;
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  .car-name{font-family:var(--font-display);font-size:19px;color:var(--sand);}
+  .car-members{font-size:13px;color:var(--sand-dim);text-align:right;}
+
+  /* ---------- CAMPSITE ---------- */
+  .site-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  @media(max-width:760px){.site-grid{grid-template-columns:1fr;}}
+  .site-card{
+    background:linear-gradient(160deg,var(--navy) 0%,var(--navy-light) 100%);
+    border:1px solid var(--line);border-radius:12px;padding:22px;text-align:center;
+  }
+  .site-num{
+    font-family:var(--font-display);font-size:34px;color:var(--orange);margin-bottom:10px;
+  }
+  .site-members{font-size:14px;color:var(--sand);}
+
+  /* ---------- GEAR ---------- */
+  .gear-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+  @media(max-width:700px){.gear-grid{grid-template-columns:1fr;}}
+  .gear-card h3{
+    font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;color:var(--teal);
+    margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line);
+  }
+  .gear-card ul{list-style:none;font-size:14px;color:var(--sand-dim);}
+  .gear-card li{padding:4px 0;position:relative;padding-left:16px;}
+  .gear-card li::before{content:"—";position:absolute;left:0;color:var(--orange);}
+
+  /* ---------- MENU ---------- */
+  .menu-card{
+    border:1px dashed var(--line);border-radius:14px;padding:44px 30px;text-align:center;
+  }
+  .menu-card .big{font-family:var(--font-display);font-size:30px;color:var(--gold);margin-bottom:8px;}
+  .menu-card p{color:var(--sand-dim);font-size:14px;}
+
+  /* ---------- RULES ---------- */
+  .rules-list{display:flex;flex-direction:column;gap:14px;}
+  .rule-item{
+    display:flex;gap:16px;align-items:flex-start;
+    background:var(--navy);border:1px solid var(--line);border-radius:10px;padding:18px 20px;
+  }
+  .rule-num{
+    font-family:var(--font-display);font-size:22px;color:var(--ember);flex-shrink:0;
+  }
+  .rule-text{font-size:14.5px;padding-top:2px;}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    margin-top:100px;padding:40px 24px 60px;text-align:center;
+    border-top:1px solid var(--line);
+  }
+  footer .fname{font-family:var(--font-display);font-size:16px;color:var(--sand-dim);letter-spacing:.05em;}
+  footer p{margin-top:8px;font-size:12px;color:var(--sand-faint);}
+
+  @media (prefers-reduced-motion: reduce){
+    .sun,.scroll-cue{animation:none;}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">いつものファミリーキャンプ<span>2026</span></div>
+    <nav class="nav-links">
+      <a href="#lineup">LINE UP</a>
+      <a href="#timetable">TIME TABLE</a>
+      <a href="#access">ACCESS</a>
+      <a href="#shuttle">SHUTTLE</a>
+      <a href="#campsite">CAMP SITE</a>
+      <a href="#gear">GEAR CHECK</a>
+      <a href="#menu">MENU</a>
+      <a href="#rules">RULES</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="sun"></div>
+  <div class="hero-content">
+    <p class="eyebrow">2026.08.08 SAT – 08.09 SUN</p>
+    <h1>いつもの<br>ファミリーキャンプ<span class="year">2026</span></h1>
+    <p class="hero-sub">とままえ夕陽ヶ丘未来港公園 ─ 夕陽と、海と、いつもの家族で。</p>
+    <div class="ticket-stub">
+      <div class="item">
+        <small>VENUE</small>
+        <strong>とままえ夕陽ヶ丘未来港公園</strong>
+      </div>
+      <div class="item">
+        <small>DATE</small>
+        <strong>2026.8.8 (土) – 8.9 (日)</strong>
+      </div>
+      <div class="item">
+        <small>MEMBERS</small>
+        <strong>児玉家・白内家・村林家 計11名</strong>
+      </div>
+      <div class="item">
+        <small>STYLE</small>
+        <strong>1泊2日 / テント泊</strong>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#lineup">SCROLL ↓ CHECK THE PLAN</a>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <section class="section" id="lineup">
+    <p class="eyebrow">## LINE UP</p>
+    <h2>参加メンバー</h2>
+    <p class="section-desc">今回集まる、いつもの顔ぶれ11名。家族ごとにチェックしてね。</p>
+
+    <div class="lineup-groups">
+      <div class="fam-group">
+        <div class="fam-name">児玉家 KODAMA FAMILY</div>
+        <div class="fam-tags">
+          <span class="tag">博通</span>
+          <span class="tag">良絵</span>
+          <span class="tag">仁斗</span>
+          <span class="tag">伊騎</span>
+          <span class="tag">えみり</span>
+          <span class="tag">圭凌</span>
+        </div>
+      </div>
+      <div class="fam-group">
+        <div class="fam-name">白内家 SHIRAUCHI FAMILY</div>
+        <div class="fam-tags">
+          <span class="tag">達三</span>
+          <span class="tag">ひとみ</span>
+          <span class="tag">掌</span>
+          <span class="tag">くるみ</span>
+        </div>
+      </div>
+      <div class="fam-group">
+        <div class="fam-name">村林家 MURABAYASHI</div>
+        <div class="fam-tags">
+          <span class="tag">太郎</span>
+        </div>
+      </div>
+    </div>
+    <p class="lineup-count">TOTAL 11 MEMBERS / 3 FAMILIES</p>
+  </section>
+
+  <div class="divider"><span class="dot"></span></div>
+
+  <section class="section" id="timetable">
+    <p class="eyebrow">## TIME TABLE</p>
+    <h2>タイムスケジュール</h2>
+    <p class="section-desc">1泊2日のランニングオーダー。時間は目安、現地では臨機応変に。</p>
+
+    <div class="tt-days">
+      <div class="tt-day">
+        <div class="tt-day-head"><span class="d">DAY 1</span><span class="w">8.8 SAT</span></div>
+
+        <div class="tt-row">
+          <div class="tt-time">8:30</div>
+          <div class="tt-body">
+            <span class="cat cat-move">MOVE</span>
+            <div class="tt-title">剣淵発</div>
+            <div class="tt-note">札幌組は苫前10:00〜11:00着を目安に別途出発</div>
+          </div>
+        </div>
+
+        <div class="tt-row">
+          <div class="tt-time">10:00</div>
+          <div class="tt-body">
+            <span class="cat cat-move">MOVE</span>
+            <div class="tt-title">苫前着</div>
+            <div class="tt-note">現地集合</div>
+          </div>
+        </div>
+
+        <div class="tt-row">
+          <div class="tt-time">10:00–11:30</div>
+          <div class="tt-body">
+            <span class="cat cat-camp">CAMP</span>
+            <div class="tt-title">野営地確保・テント設営・昼食準備</div>
+          </div>
+        </div>
+
+        <div class="tt-row">
+          <div class="tt-time">11:30</div>
+          <div class="tt-body">
+            <span class="cat cat-meal">MEAL</span>
+            <div class="tt-title">昼食</div>
+            <div class="tt-note">ホットドッグ・コーンスープ・コーヒーなど</div>
+          </div>
+        </div>
+
+        <div class="tt-row">
+          <div class="tt-time">14:00</div>
+          <div class="tt-body">
+            <span class="cat cat-shop">SHOP</span>
+            <div class="tt-title">買い出し</div>
+            <div class="tt-note">夕食・翌朝の食材やお酒など</div>
+          </div>
+        </div>
+
+        <div class="tt-row">
+          <div class="tt-time">14:00–17:30</div>
+          <div class="tt-body">
+            <span class="cat cat-camp">FREE</span>
+            <div class="tt-title">フリータイム・夕食準備</div>
+          </div>
+        </div>
+
+        <div class="tt-row">
+          <div class="tt-time">17:30</div>
+          <div class="tt-body">
+            <span class="cat cat-party">PARTY</span>
+            <div class="tt-title">夕食・宴のとき</div>
+            <div class="tt-note">唄えや語れやで楽しみましょう！</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tt-day">
+        <div class="tt-day-head"><span class="d">DAY 2</span><span class="w">8.9 SUN</span></div>
+
+        <div class="tt-row">
+          <div class="tt-time">7:39</div>
+          <div class="tt-body">
+            <span class="cat cat-camp">MORNING</span>
+            <div class="tt-title">起床</div>
+          </div>
+        </div>
+
+        <div class="tt-row">
+          <div class="tt-time">7:39–</div>
+          <div class="tt-body">
+            <span class="cat cat-meal">MEAL</span>
+            <div class="tt-title">朝食準備</div>
+            <div class="tt-note">博通おじちゃんのおでん／掌のタコス／圭凌のナン</div>
+          </div>
+        </div>
+
+        <div class="tt-row">
+          <div class="tt-time">–</div>
+          <div class="tt-body">
+            <span class="cat cat-camp">FREE</span>
+            <div class="tt-title">撤収・解散</div>
+            <div class="tt-note">時間は追って共有します</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="dot"></span></div>
+
+  <section class="section" id="access">
+    <p class="eyebrow">## ACCESS</p>
+    <h2>会場・アクセス</h2>
+    <p class="section-desc">日本海に面した夕陽の名所。海沿いの野営地です。</p>
+
+    <div class="access-card">
+      <div>
+        <div class="access-name">とままえ夕陽ヶ丘未来港公園</div>
+        <div class="access-addr">北海道苫前郡苫前町（日本海オロロンライン沿い）</div>
+      </div>
+      <a class="map-btn" href="https://maps.app.goo.gl/ps4Dpim4YwrySU1a6" target="_blank" rel="noopener">
+        Google Mapで見る →
+      </a>
+    </div>
+
+    <div class="depart-grid">
+      <div class="depart-card">
+        <small>剣淵組 出発</small>
+        <div>8:30発 → 苫前10:00着目安</div>
+      </div>
+      <div class="depart-card">
+        <small>札幌組 出発</small>
+        <div>苫前11:00着を目安に出発</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="dot"></span></div>
+
+  <section class="section" id="shuttle">
+    <p class="eyebrow">## SHUTTLE</p>
+    <h2>配車割り</h2>
+    <p class="section-desc">往路・復路で一部乗車メンバーが変わります。確認をお願いします。</p>
+
+    <div class="shuttle-cols">
+      <div>
+        <div class="shuttle-col-title">往路 →</div>
+        <div class="car-card"><div class="car-name">FREED</div><div class="car-members">達三・ひとみ・くるみ</div></div>
+        <div class="car-card"><div class="car-name">フォレスタ</div><div class="car-members">博通・良絵・圭凌</div></div>
+        <div class="car-card"><div class="car-name">CX-5</div><div class="car-members">仁斗</div></div>
+        <div class="car-card"><div class="car-name">RAV-4</div><div class="car-members">伊騎・えみり・掌</div></div>
+      </div>
+      <div>
+        <div class="shuttle-col-title">復路 ←</div>
+        <div class="car-card"><div class="car-name">FREED</div><div class="car-members">達三・ひとみ・くるみ</div></div>
+        <div class="car-card"><div class="car-name">フォレスタ</div><div class="car-members">博通・良絵・圭凌</div></div>
+        <div class="car-card"><div class="car-name">CX-5</div><div class="car-members">仁斗・掌</div></div>
+        <div class="car-card"><div class="car-name">RAV-4</div><div class="car-members">伊騎・えみり</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="dot"></span></div>
+
+  <section class="section" id="campsite">
+    <p class="eyebrow">## CAMP SITE</p>
+    <h2>テント割り</h2>
+    <p class="section-desc">3張のテントで過ごします。</p>
+
+    <div class="site-grid">
+      <div class="site-card">
+        <div class="site-num">①</div>
+        <div class="site-members">仁斗・掌・伊騎・圭凌</div>
+      </div>
+      <div class="site-card">
+        <div class="site-num">②</div>
+        <div class="site-members">良絵・ひとみ・えみり・くるみ</div>
+      </div>
+      <div class="site-card">
+        <div class="site-num">③</div>
+        <div class="site-members">達三・博通・太郎</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="dot"></span></div>
+
+  <section class="section" id="gear">
+    <p class="eyebrow">## GEAR CHECK</p>
+    <h2>持ち物リスト</h2>
+    <p class="section-desc">家族ごとの担当分と、各自持参のものです。</p>
+
+    <div class="gear-grid">
+      <div class="gear-card">
+        <h3>白内家</h3>
+        <ul>
+          <li>テント × 1張</li>
+          <li>シュラフ × 4</li>
+          <li>クーラーボックス</li>
+          <li>コンロ</li>
+          <li>ファイヤースタンド</li>
+          <li>カセットコンロ</li>
+          <li>電気ランタン</li>
+          <li>椅子 × 4</li>
+          <li>テーブル</li>
+        </ul>
+      </div>
+      <div class="gear-card">
+        <h3>児玉家</h3>
+        <ul>
+          <li>テント × 2張</li>
+          <li>タープ</li>
+          <li>ダッチオーブン</li>
+          <li>コンロ × 2</li>
+          <li>カセットコンロ</li>
+          <li>やかん</li>
+          <li>フライパン</li>
+          <li>鍋</li>
+          <li>オイルランタン</li>
+          <li>包丁・まな板</li>
+          <li>椅子 × 6</li>
+          <li>トング</li>
+        </ul>
+      </div>
+      <div class="gear-card">
+        <h3>札幌組</h3>
+        <ul>
+          <li>お風呂セット</li>
+        </ul>
+      </div>
+      <div class="gear-card">
+        <h3>各自・共通で用意</h3>
+        <ul>
+          <li>虫除け</li>
+          <li>キッチンペーパー</li>
+          <li>アルミホイル</li>
+          <li>皿・コップ</li>
+          <li>割り箸</li>
+          <li>炭</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="dot"></span></div>
+
+  <section class="section" id="menu">
+    <p class="eyebrow">## MENU</p>
+    <h2>メニュー・食事情報</h2>
+    <div class="menu-card">
+      <div class="big">COMING SOON</div>
+      <p>夕食・献立は現在調整中です。決まり次第このページに追記します。<br>朝食は博通おじちゃんのおでん、掌のタコス、圭凌のナンが確定！</p>
+    </div>
+  </section>
+
+  <div class="divider"><span class="dot"></span></div>
+
+  <section class="section" id="rules">
+    <p class="eyebrow">## FES MANNERS</p>
+    <h2>ルール・注意事項</h2>
+    <div class="rules-list">
+      <div class="rule-item">
+        <span class="rule-num">01</span>
+        <span class="rule-text">年上は年下の面倒をしっかり見て、みんな仲良く過ごすこと。</span>
+      </div>
+      <div class="rule-item">
+        <span class="rule-num">02</span>
+        <span class="rule-text">お店では走らないこと。</span>
+      </div>
+      <div class="rule-item">
+        <span class="rule-num">03</span>
+        <span class="rule-text">親の言うことをしっかり聞くこと。</span>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="fname">いつものファミリーキャンプ 2026</div>
+  <p>2026.8.8 SAT – 8.9 SUN / とままえ夕陽ヶ丘未来港公園</p>
+  <p>本ページは参加者内での計画共有を目的とした私的なページです。</p>
+</footer>
+
+</body>
+</html>
