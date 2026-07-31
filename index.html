@@ -326,10 +326,16 @@
   .car-card{
     background:var(--navy);border:1px solid var(--line);border-radius:10px;
     padding:16px 18px;margin-bottom:12px;
-    display:flex;justify-content:space-between;align-items:center;gap:12px;
+    display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 12px;
   }
   .car-name{font-family:var(--font-display);font-size:19px;color:var(--sand);}
   .car-members{font-size:13px;color:var(--sand-dim);text-align:right;}
+  .car-note{
+    flex-basis:100%;
+    font-size:11.5px;color:var(--gold);
+    text-align:right;
+    margin-top:-4px;
+  }
 
   /* ---------- CAMPSITE ---------- */
   .site-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
@@ -616,17 +622,27 @@
     <div class="shuttle-cols">
       <div>
         <div class="shuttle-col-title">往路 →</div>
-        <div class="car-card"><div class="car-name">FREED</div><div class="car-members">達三・ひとみ・くるみ</div></div>
+        <div class="car-card"><div class="car-name">FREED</div><div class="car-members">達三・ひとみ</div></div>
         <div class="car-card"><div class="car-name">フォレスタ</div><div class="car-members">博通・良絵・圭凌</div></div>
         <div class="car-card"><div class="car-name">CX-5</div><div class="car-members">仁斗</div></div>
         <div class="car-card"><div class="car-name">RAV-4</div><div class="car-members">伊騎・えみり・掌</div></div>
+        <div class="car-card">
+          <div class="car-name">ラパン</div><div class="car-members">くるみ（現地合流）</div>
+          <div class="car-note">時間休が取れれば13:00頃旭川発／取得可否により変更あり</div>
+        </div>
+        <div class="car-card">
+          <div class="car-name">自家用車</div><div class="car-members">太郎</div>
+          <div class="car-note">合流時間は確認中</div>
+        </div>
       </div>
       <div>
         <div class="shuttle-col-title">復路 ←</div>
-        <div class="car-card"><div class="car-name">FREED</div><div class="car-members">達三・ひとみ・くるみ</div></div>
+        <div class="car-card"><div class="car-name">FREED</div><div class="car-members">達三・ひとみ</div></div>
         <div class="car-card"><div class="car-name">フォレスタ</div><div class="car-members">博通・良絵・圭凌</div></div>
         <div class="car-card"><div class="car-name">CX-5</div><div class="car-members">仁斗・掌</div></div>
         <div class="car-card"><div class="car-name">RAV-4</div><div class="car-members">伊騎・えみり</div></div>
+        <div class="car-card"><div class="car-name">ラパン</div><div class="car-members">くるみ</div></div>
+        <div class="car-card"><div class="car-name">自家用車</div><div class="car-members">太郎</div></div>
       </div>
     </div>
   </section>
