@@ -367,6 +367,33 @@
   .menu-card .big{font-family:var(--font-display);font-size:30px;color:var(--gold);margin-bottom:8px;}
   .menu-card p{color:var(--sand-dim);font-size:14px;}
 
+  /* ---------- PLAYLIST ---------- */
+  .playlist-card{
+    background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);
+    border:1px solid var(--line);border-radius:14px;
+    padding:34px 30px;
+    display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;
+  }
+  .playlist-info .playlist-eyebrow{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;color:var(--teal);margin-bottom:6px;
+  }
+  .playlist-info .playlist-title{
+    font-family:var(--font-display);font-size:22px;color:var(--sand);
+  }
+  .playlist-info p{margin-top:6px;font-size:13.5px;color:var(--sand-dim);}
+  .playlist-btns{display:flex;flex-wrap:wrap;gap:12px;}
+  .playlist-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-weight:700;font-size:14px;
+    padding:12px 22px;border-radius:30px;text-decoration:none;
+    transition:.2s;white-space:nowrap;
+    border:1px solid var(--line);
+  }
+  .playlist-btn.apple{background:var(--sand);color:var(--navy-deep);}
+  .playlist-btn.apple:hover{background:#fff;}
+  .playlist-btn.spotify{background:transparent;color:var(--sand);border-color:var(--teal);}
+  .playlist-btn.spotify:hover{background:var(--teal);color:var(--navy-deep);}
+
   /* ---------- RULES ---------- */
   .rules-list{display:flex;flex-direction:column;gap:14px;}
   .rule-item{
@@ -400,6 +427,7 @@
       <a href="#lineup">LINE UP</a>
       <a href="#timetable">TIME TABLE</a>
       <a href="#access">ACCESS</a>
+      <a href="#playlist">PLAYLIST</a>
       <a href="#shuttle">SHUTTLE</a>
       <a href="#campsite">CAMP SITE</a>
       <a href="#gear">GEAR CHECK</a>
@@ -614,6 +642,30 @@
 
   <div class="divider"><span class="dot"></span></div>
 
+  <section class="section" id="playlist">
+    <p class="eyebrow">## SOUND TRACK</p>
+    <h2>プレイリスト</h2>
+    <p class="section-desc">キャンプ中に流す今回のプレイリストです。</p>
+
+    <div class="playlist-card">
+      <div class="playlist-info">
+        <div class="playlist-eyebrow">NOW PLAYING</div>
+        <div class="playlist-title">Music for Two Close Families Camping Overnight</div>
+        <p>Apple Music / Spotify どちらでも同じプレイリストが聴けます。</p>
+      </div>
+      <div class="playlist-btns">
+        <a class="playlist-btn apple" href="https://music.apple.com/jp/playlist/music-for-two-close-families-camping-overnight/pl.u-GgA5YP5sdzaMPx" target="_blank" rel="noopener">
+          Apple Musicで開く →
+        </a>
+        <a class="playlist-btn spotify" href="https://open.spotify.com/playlist/5Ou2DsJXE2zUDZA49f5Myr?si=bog0EJdnR7yIIUmpkeQrHQ&utm_source=copy-link&pi=v8XzLlqcR0Sxd" target="_blank" rel="noopener">
+          Spotifyで開く →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="dot"></span></div>
+
   <section class="section" id="shuttle">
     <p class="eyebrow">## SHUTTLE</p>
     <h2>配車割り</h2>
@@ -740,7 +792,6 @@
     </div>
   </section>
 
-  <div class="divider"><span class="dot"></span></div>
 
   <section class="section" id="rules">
     <p class="eyebrow">## FES MANNERS</p>
