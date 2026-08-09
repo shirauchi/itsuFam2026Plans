@@ -405,6 +405,26 @@
   }
   .rule-text{font-size:14.5px;padding-top:2px;}
 
+  /* ---------- SNAPSHOT ---------- */
+  .snapshot-frame{
+    position:relative;
+    border-radius:14px;
+    overflow:hidden;
+    border:1px solid var(--line);
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+  }
+  .snapshot-frame img{
+    width:100%;height:auto;display:block;
+  }
+  .snapshot-caption{
+    margin-top:18px;
+    text-align:center;
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:.1em;
+    color:var(--sand-dim);
+  }
+
   /* ---------- FOOTER ---------- */
   footer{
     margin-top:100px;padding:40px 24px 60px;text-align:center;
@@ -433,6 +453,7 @@
       <a href="#gear">GEAR CHECK</a>
       <a href="#menu">MENU</a>
       <a href="#rules">RULES</a>
+      <a href="#snapshot">SNAPSHOT</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
@@ -810,6 +831,17 @@
         <span class="rule-text">親の言うことをしっかり聞くこと。</span>
       </div>
     </div>
+  </section>
+
+  <div class="divider"><span class="dot"></span></div>
+
+  <section class="section" id="snapshot">
+    <p class="eyebrow">## SNAPSHOT</p>
+    <h2>いつもの、みんなで。</h2>
+    <div class="snapshot-frame">
+      <img src="images/group-photo.jpg" alt="いつものファミリーキャンプ 集合写真" loading="lazy">
+    </div>
+    <p class="snapshot-caption">SEE YOU AT THE CAMPSITE — 2026.8.8-9</p>
   </section>
 
 </div>
